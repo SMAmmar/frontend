@@ -60,27 +60,7 @@ const HeaderContainer = styled.header`
     display: none !important;
   `}
 }
-  .signIn-btn {
-    right: 0;
-    margin: 1.125rem 3% 0;
-    padding: 0.4375rem 1.0625rem;
-    font-wight: 400;
-    line-height: normal;
-    border-radius: 0.1875rem;
-    font-size: 1rem;
-    background: var(--main-red);
-    position: absolute;
-    translate: transform(-50%, -50%);
-    cursor: pointer;
-    transition: background 0.2s ease-in; 
-    &:hover {
-      background: #d30913;
-    }
-    ${customMedia.lessThan("smTablet")`
-      margin-top: 1.25rem;
-      right: 5%;
-    `}
-  }
+  
   // Header Top
   .header-top {
     position: relative;
