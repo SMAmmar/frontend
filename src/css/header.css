@@ -1,0 +1,14 @@
+.signIn-btn {
+  right: 0;
+  margin: 1.125rem;
+  padding: 0.4375rem 1.0625rem;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 0.1875rem;
+  font-size: 1rem;
+  background: var(--main-red);
+  position: absolute;
+  translate: (-50%, -50%);
+  cursor: pointer;
+  transition: background 0.2s ease-in;
+}
