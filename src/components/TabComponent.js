@@ -49,9 +49,6 @@ class TabComponent extends Component {
               <p className="lgScreen" style={{ marginTop: "-5.3125rem" }}>
                 <strong>How it Works</strong>
               </p>
-              <span className="mdScreen" style={{ marginTop: "-5.3125rem" }}>
-                Devices
-              </span>
             </Tab>
             <Tab
               className={`${
