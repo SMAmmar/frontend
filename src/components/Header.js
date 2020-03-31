@@ -57,7 +57,7 @@ const Logo = styled.img`
   width: 25rem;
   height: 15rem;
   position: absolute;
-
+  z-index: 1;
   left: 10%;
   transform: translate(-50%, -50%);
   ${customMedia.lessThan("tablet")`
