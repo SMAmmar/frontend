@@ -2,22 +2,35 @@ import React, { Component } from "react";
 import logo from "../images/logo_white.png";
 import styled from "styled-components";
 import { NavLink, Link } from "react-router-dom";
-import Icon from "react-icons-kit";
-import { ic_keyboard_arrow_right } from "react-icons-kit/md/ic_keyboard_arrow_right";
 import { generateMedia } from "styled-media-query";
 import Button from "./Button";
-
-import ReactDOM from "react-dom";
+import { Nav, NavItem } from "reactstrap";
+import "../css/header.css";
 
 class Header extends Component {
   render() {
     return (
       <HeaderContainer className="header-container">
-        <div className="header-top">
-          <Logo className="logo" src={logo} />
-        </div>
+        <div>
+          <header className="header">
+            <a href="" className="logo">
+              <Logo className="logo" src={logo} />
+            </a>
+            <input className="menu-btn" type="checkbox" id="menu-btn" />
+            <label className="menu-icon" htmlFor="menu-btn">
+              <span className="navicon"></span>
+            </label>
+            <ul className="menu">
+              <li>
+                <a href="#contact">Blogs</a>
+              </li>
+              <li>
+                <a href="#contact">Join Us</a>
+              </li>
+            </ul>
+          </header>
+        </div>{" "}
         {/* Header Content */}
-
         <div className="header-content">
           <Title style={{ paddingTop: "8%" }}>Play Like Never Before</Title>
           <Link to="/choose-plan">
@@ -44,7 +57,7 @@ const Logo = styled.img`
   width: 25rem;
   height: 15rem;
   position: absolute;
-  top: 35%;
+
   left: 10%;
   transform: translate(-50%, -50%);
   ${customMedia.lessThan("tablet")`
